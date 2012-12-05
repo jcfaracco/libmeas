@@ -86,7 +86,7 @@ int meas_generate_report(meas_t **mst, int parameters)
 					sprintf(line, " ");
 					append_text(&umst->report, line);
 				}
-			 	sprintf(line, "   %ld\n", clock->interv);
+			 	sprintf(line, "   %lu\n", clock->interv);
 				append_text(&umst->report, line);
 			}
 		}
@@ -109,7 +109,7 @@ int meas_generate_report(meas_t **mst, int parameters)
 					sprintf(line, " ");
 					append_text(&umst->report, line);
 				}
-				sprintf(line, "   %ld\n", meas_get_counter(*counter));
+				sprintf(line, "   %lu\n", meas_get_counter(*counter));
 				append_text(&umst->report, line);
 			}
 		}
