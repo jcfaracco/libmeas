@@ -1,11 +1,8 @@
-*****************************************************************
-* libmeas - A measurement system for critical embedded systems  *
-*                                                               *
-* Copyright (C) 2009 Renê de Souza Pinto                        *
-*****************************************************************
+libmeas - A measurement system for critical embedded systems
+============================================================
 
-About:
-------
+About
+-----
 
 libmeas is a C library that provides a simple API to make measurements on any
 kind of system (that support calling C functions), specially on critical
@@ -16,12 +13,12 @@ libmeas can run on any POSIX platform, but patches for the Linux kernel are
 provided to measure time with more accuracy.
 
 
-How to instal:
+How to Install
 --------------
 
-$ ./configure
-$ make
-$ make install
+	$ ./configure
+	$ make
+	$ make install
 
 Documentation will be saved into doc directory.
 
@@ -31,8 +28,10 @@ Author:
 
 libmeas was written and is maintained by Renê de Souza Pinto.
 
+Copyright (C) 2009 Renê de Souza Pinto
+
 Bugs:
 -----
 
-BUGs shall be reported to rene@renesp.com.br
+BUG's shall be reported to rene@renesp.com.br
 
