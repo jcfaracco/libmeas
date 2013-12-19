@@ -1,5 +1,7 @@
-libmeas - A measurement system for critical embedded systems
-============================================================
+Libmeas
+=======
+
+A measurement system for critical embedded systems.
 
 About
 -----
