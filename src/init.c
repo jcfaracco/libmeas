@@ -37,6 +37,7 @@ char _libmeas_use_syscall = 0;
  */
 __attribute__((constructor)) void init(void)
 {
+#if defined(linux) || defined(__linux) || defined(__linux__)
 	/*  Check if libmeas syscall is available */
 	syscall(SYS_getjiffies);
 	if(errno == 0) {
@@ -46,6 +47,11 @@ __attribute__((constructor)) void init(void)
 		/* Not available */
 		_libmeas_use_syscall = 0;
 	}
+#else
+	/* Ensure that _libmeas_use_syscall will be zero. */
+	/* TODO: Discover how to call a syscall on gnumach (__GNU__). */
+	_libmeas_use_syscall = 0;
+#endif
 }
 
 
